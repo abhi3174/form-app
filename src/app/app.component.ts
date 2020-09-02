@@ -18,8 +18,8 @@ export class AppComponent {
   ]);
 
   public readFormValue() {
-    console.log();
     const uesrname = this.nameControl.value;
+    console.log(uesrname);
 
     this.nameControl.setValue('');
   }
