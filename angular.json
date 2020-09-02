@@ -144,6 +144,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "form-app"
+    }
+  },
+  "defaultProject": "form-app",
+  "cli": {
+    "analytics": false
+  }
 }
