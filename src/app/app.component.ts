@@ -1,10 +1,26 @@
 import { Component } from '@angular/core';
+import { FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
   title = 'form-app';
+
+  // public nameControl = new FormControl();
+  // public nameControl = new FormControl('', Validators.required);
+  public nameControl = new FormControl('', [
+    Validators.required,
+    Validators.minLength(3),
+    Validators.maxLength(6),
+  ]);
+
+  public readFormValue() {
+    console.log();
+    const uesrname = this.nameControl.value;
+
+    this.nameControl.setValue('');
+  }
 }
