@@ -1,4 +1,8 @@
-<input type="text" placeholder="Enter userame here " [formControl]="nameControl" />
+<input
+  type="text"
+  placeholder="Enter userame here "
+  [formControl]="nameControl"
+/>
 <button [disabled]="!nameControl.valid" (click)="readFormValue()">
   Register
 </button>
@@ -10,3 +14,5 @@
 <app-page2></app-page2>
 
 <app-page3></app-page3>
+
+<app-page4></app-page4>
