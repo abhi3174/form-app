@@ -27,7 +27,7 @@ export class Page3Component implements OnInit {
     mobile: ['', Validators.required],
   });
 
-  // using form builder service
+  // using form builder service :: injecting the required services
   constructor(private fb: FormBuilder, private http: HttpClient) {}
 
   ngOnInit(): void {}
