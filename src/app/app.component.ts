@@ -14,7 +14,7 @@ export class AppComponent {
   public nameControl = new FormControl('', [
     Validators.required,
     Validators.minLength(3),
-    Validators.maxLength(6),
+    Validators.pattern('[a-zAZ0-9]*'),
   ]);
 
   public readFormValue() {
