@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { FormBuilder } from '@angular/forms';
+import { CommonService } from '../service/common.service';
 
 @Component({
   selector: 'app-page4',
@@ -22,7 +23,8 @@ export class Page4Component implements OnInit {
   constructor(
     private http: HttpClient,
     private router: Router,
-    private fb: FormBuilder
+    private fb: FormBuilder,
+    public cs: CommonService
   ) {}
 
   ngOnInit(): void {}

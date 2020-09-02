@@ -6,6 +6,7 @@ import {
   FormControl,
 } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
+import { CommonService } from '../service/common.service';
 
 @Component({
   selector: 'app-page3',
@@ -28,7 +29,11 @@ export class Page3Component implements OnInit {
   });
 
   // using form builder service :: injecting the required services
-  constructor(private fb: FormBuilder, private http: HttpClient) {}
+  constructor(
+    private fb: FormBuilder,
+    private http: HttpClient,
+    public cs: CommonService
+  ) {}
 
   ngOnInit(): void {}
 
