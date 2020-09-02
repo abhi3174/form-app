@@ -6,9 +6,10 @@ import { HttpClientModule } from '@angular/common/http'; // To work with Ajax / 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { Page1Component } from './page1/page1.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, Page1Component],
   imports: [
     BrowserModule,
     AppRoutingModule,
